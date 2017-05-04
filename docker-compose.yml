@@ -48,6 +48,7 @@ services:
       networks:
         - frontend
         - backend
+      restart: always  
 
 ### PHP-FPM Container #######################################
 
@@ -85,6 +86,7 @@ services:
         - PHP_IDE_CONFIG=${PHP_IDE_CONFIG}
       networks:
         - backend
+      restart: always
 
 ### PHP Worker Container #####################################
 
@@ -118,6 +120,7 @@ services:
       networks:
         - frontend
         - backend
+      restart: always
 
 ### Blackfire Container #################################
 
